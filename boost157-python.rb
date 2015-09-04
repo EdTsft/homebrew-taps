@@ -37,9 +37,9 @@ class Boost157Python < Formula
   depends_on UniversalPython3 if build.universal? and build.with? "python3"
 
   if build.cxx11?
-    depends_on "ianblenke/taps/boost" => "c++11"
+    depends_on "EdTsft/versions-custom/boost157" => "c++11"
   else
-    depends_on "ianblenke/taps/boost"
+    depends_on "EdTsft/versions-custom/boost157"
   end
 
   fails_with :llvm do
@@ -70,7 +70,7 @@ class Boost157Python < Formula
       if ENV.compiler == :clang
         args << "cxxflags=-stdlib=libc++" << "linkflags=-stdlib=libc++"
       end
-    elsif Tab.for_name("ianblenke/taps/boost").cxx11?
+    elsif Tab.for_name("EdTsft/versions-custom/boost157").cxx11?
       odie "boost was built in C++11 mode so boost-python must be built with --c++11."
     end
 
