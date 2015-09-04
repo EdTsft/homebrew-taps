@@ -22,7 +22,7 @@ class UniversalPython3 < Requirement
   end
 end
 
-class BoostPython < Formula
+class Boost157Python < Formula
   homepage "http://www.boost.org"
   url "http://pkgs.fedoraproject.org/repo/pkgs/boost/boost_1_57_0.tar.bz2/1be49befbdd9a5ce9def2983ba3e7b76/boost_1_57_0.tar.bz2"
   sha1 "e151557ae47afd1b43dc3fac46f8b04a8fe51c12"
